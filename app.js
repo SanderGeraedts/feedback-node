@@ -13,6 +13,8 @@ mongoose.connect('mongodb+srv://sandergeraedts:' + process.env.MONGO_ATLAS_PW + 
     }
 );
 
+console.log(mongoose);
+
 app.use(morgan('dev'));
 app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: true, limit: '50mb'}));
