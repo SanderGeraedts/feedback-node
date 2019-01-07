@@ -68,7 +68,7 @@ exports.locations_create_location = (req, res, next) => {
             if (result) {
                 res.status(201).json({
                     message: "Location saved",
-                    feedback: result,
+                    location: result,
                     requests: requests(domain)
                 });
             } else {
